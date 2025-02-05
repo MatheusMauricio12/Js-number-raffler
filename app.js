@@ -5,7 +5,7 @@ let tillNumber = document.querySelector('#till');
 
 
 function sort(){
-    let tagContent = document.querySelector('#result');
+    let tagContent = document.getElementById('result');
     for(i = 0; i < quantityOfNumbers.value; i++){
         numbersList.push(getRandomNumber(fromNumber.value, tillNumber.value));
     }
@@ -15,7 +15,7 @@ function sort(){
             sortedNumbers += numbersList[i] + ' ';
         }
         document.querySelector('#btn-restart').className = "container__button";
-        tagContent.innerHTML = `Sorted numbers: ${sortedNumbers}`;      
+        tagContent.innerHTML = `<label class=text__paragraph>Sorted numbers: ${sortedNumbers}`;      
     }
 
 }; 
