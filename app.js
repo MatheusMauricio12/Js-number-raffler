@@ -10,12 +10,12 @@ function sort(){
         numbersList.push(getRandomNumber(fromNumber.value, tillNumber.value));
     }
     if(numbersList.length == quantityOfNumbers.value){
-        let sortedNumbers = "";
+        let raffledNumbers = "";
         for(i = 0; i < numbersList.length; i++){
-            sortedNumbers += numbersList[i] + ' ';
+            raffledNumbers += numbersList[i] + ' ';
         }
         document.querySelector('#btn-restart').className = "container__button";
-        tagContent.innerHTML = `<label class=text__paragraph>Sorted numbers: ${sortedNumbers}`;      
+        tagContent.innerHTML = `<label class=text__paragraph>Sorted numbers: ${raffledNumbers}`;      
     }
 
 }; 
